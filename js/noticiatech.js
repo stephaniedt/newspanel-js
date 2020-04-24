@@ -3,7 +3,7 @@ let containerNews = document.querySelector('#newsList')
 
 window.onload = async function techNews() {
 
-    let noticias = await fetch('http://newsapi.org/v2/top-headlines?country=br&category=technology&apiKey=c7c46efa75e649d194837c21de0c5a1c')
+    let noticias = await fetch('https://newsapi.org/v2/top-headlines?country=br&category=technology&apiKey=c7c46efa75e649d194837c21de0c5a1c')
     let listaNoticias =  await noticias.json()
 
     listaNoticias.articles.forEach(noticia => {
